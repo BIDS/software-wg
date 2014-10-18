@@ -19,3 +19,4 @@ Domain-specific
 | Astrophysics | JuliaAstro | http://github.com/JuliaAstro | Julia | Beta | Kyle | contributor | Julia packages for Astronomy |
 | Astrophysics | SNCosmo | http://github.com/sncosmo/sncosmo | Python | Production | Kyle | creator | Python library for supernova cosmology |
 | Astrophysics | SEP | http://github.com/kbarbary/sep | C, Python | Beta | Kyle | creator | Astronomy library for source-detection in images |
+| Ecology | macroeco | http://github.com/jkitzes/macroeco | Python | Beta | Justin | creator | Python package with GUI for ecological pattern analysis |
