@@ -20,3 +20,4 @@ Domain-specific
 | Astrophysics | SNCosmo | http://github.com/sncosmo/sncosmo | Python | Production | Kyle | creator | Python library for supernova cosmology |
 | Astrophysics | SEP | http://github.com/kbarbary/sep | C, Python | Beta | Kyle | creator | Astronomy library for source-detection in images |
 | Ecology | macroeco | http://github.com/jkitzes/macroeco | Python | Beta | Justin | creator | Python package with GUI for ecological pattern analysis |
+| Sociology | Text Thresher | ttps://github.com/goodly | JavaScrit, Python | Alpha | Nick | creator | A tool for decomposing and annotating articles using the crowd |
