@@ -25,7 +25,8 @@ Domain-specific
 | Astrophysics   | SNCosmo       | sncosmo/sncosmo             | Python       | Production | Kyle   | creator     | Python library for supernova cosmology                                    |
 | Astrophysics   | SEP           | kbarbary/sep                | C, Python    | Beta       | Kyle   | creator     | Astronomy library for source-detection in images                          |
 | Ecology        | macroeco      | jkitzes/macroeco            | Python       | Beta       | Justin | creator     | Python package with GUI for ecological pattern analysis                   |
-| Sociology      | Text Thresher | goodly/                     | JS, Python   | Alpha      | Nick   | creator     | A tool for decomposing and annotating text documents using the crowd            |
+| Sociology      | Text Thresher | goodly/                     | JS, Python   | Alpha      | Nick   | creator     | A tool for decomposing and annotating text documents using the crowd      |
 | Finance        | ancerno-env   | dlab-berkeley/ancerno-env   | Python, etc. | Beta       | Dav    | creator     | Open source tools to replace the quantitative finance masters in Haas ;)  |
 | Social Science | mturk_admin   | davclark/mturk_admin        | Python       | Production | Dav    | creator     | Longitudinal experiments on MTurk (cf. psiturk)                           |
 | Social Science | MobSci        | mobsci.dlab.berkeley.edu    | HTML5?       | Production | Dav    | creator     | Documentation & training focused effort for mobile device data collection |
+| Statistics     | NIMBLE        | nimble-dev/nimble           | R, C         | Alpha      | Daniel | contributor | Generic statistical algorithm specification and compilation to C          |
