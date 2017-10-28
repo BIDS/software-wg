@@ -31,4 +31,5 @@ attract and retain top data science “builders.”
    :hidden:
    :maxdepth: 2
 
+   projects
    plan/index
