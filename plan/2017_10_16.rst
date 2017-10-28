@@ -1,0 +1,107 @@
+﻿10/16/2017
+==========
+
+
+Please do not modify this document further, unless present at the meeting.
+
+
+Present: Stéfan, Jarrod, Chris Hench, Elena Glassman, Chris Holdgraf, Dmitriy Morozov, Jonathan Dugan, Nathaniel Smith (phone), Carl B, Chris Kennedy
+
+
+* [Stéfan] Introduction & overview of last years
+* [Jarrod] DS4DS v2
+   * Related to NumPy grant
+   * Reading group (patterns, architecture, view from Berkeley paper?, grammar of graphics)
+   * Paper after
+   * Sub-ideas to clarify:
+      * API
+      * Exchange formats
+      * Level/scope: just arrays? API patterns for common machine learning patterns? ...
+* [Nathaniel] Numpy grant: make NumPy better
+   * Job ad up in next week or two
+   * Nathaniel giving talk on Thursday
+   * Contributions include topics such as:
+      * Refactor internal architecture to extend data representation
+      * First class support for categorical data, missing data, sparse arrays, customizable data types
+      * Lots of smaller issues to triage and prioritize
+* [Chris Holdgraf & Nelle] Docathon
+   * Week-long event to increase documentation
+   * https://docathon.github.io/docathon/ 
+   * Tooling work:
+      * Numpydoc
+      * Improvements to the website
+      * Analytics pipeline for the github workflow
+      * Visualizations for the analytics
+* Data science Kaggle/other competition for team building
+   * Intense 2-day hackathon, vs longer term low burner project
+   * For team building, probably shorter term
+   * Try to rope in folks who aren’t here every day
+   * Jonathan++
+   * Nelle mentions:
+      * in their previous team they used to do this as a retreat event
+      * It may be possible to publish a paper on this, if we pick the challenge carefully
+* [Dmitriy] Vis Extravaganza
+   * First event: tomorrow (Tue, 10/17/2017); then possibly monthly
+   * Discussion on how to make paper figures better / more effective
+   * Expand across campus?
+   * Jarrod suggests contacting Deb Nolan for vis lecture
+   * Organizational help welcome
+* [Dmitriy] Dionysus
+   * It computes persistent homologies
+* [Stéfan] Machine Shop
+* [Stéfan] SkyPortal
+* [Jarrod] GraphXD
+   * https://graphxd.github.io
+   * Seminar series on theory of and computation on graphs
+   * Workshop
+   * Book?
+* In general, connect with Marsha to communicate these types of events
+* [Nelle] Peer code review of small snippets
+   * Figure out technical problem, use better APIs, how to use library better, etc.
+   * Impromptu?
+   * Friday afternoon; drinks/food/happy code/happy hacks
+   * Talk to Nelle about turning happy hours into part code-review
+   * Connect with Stuart, Hacker Within?
+* [Maryam] Education -- beyond Software Carpentry
+   * Generate educational material, focused lessons, Software Carpentry++ bridging SWC to more advanced lectures
+   * How do I package for pip, how do I share my data at UC Berkeley, etc.
+   * Organize workshop to teach this type of thing at BIDS
+   * J: Point blog post to technical work that has been done
+   * Can we utilize existing materials from folks at UW, SciPy lectures
+   * Take a look at what Data Carpentry has done already
+* [Fernando] Software exercises collection
+   * Stand-alone, not building on other work
+   * Easy to select & re-use in lectures
+* [Chris Hench]: Introductory data science notebooks
+   * https://github.com/ds-modules
+   * Course specific, mostly one per course, sometimes more, usually mid-semester for 1-4 class periods [DSEP + D-Lab + BIDS]
+   * Social sciences, mainly
+   * Blog post?
+   * Watch for GitHub pages site
+
+
+* [Chris Holdgraf] GitHub developer dashboard
+   * The idea here is to use the GitHub API to create some kind of dashboard that developers can use to measure community health
+   * There’s interest from some folks at GitHub in something like this, so we may be able to get a cool dataset from them.
+   * [Stéfan]: Also take a look at OSS DevKit (currently under development at BIDS): https://paper.dropbox.com/doc/Open-Source-DevKit-TB33O5Y8ZeTnTkHP1SbYN?_tk=share_copylink -- we already have a functional command line client that can be used to pull/push PR changes from/to GitHub.
+* [Chris Holdgraf] Turtle JavaScript repo
+   * Turtle is a great way for beginning programmers to learn about programming. Heavily-utilized in middle- and high-schools
+   * Thomas Kluyver has a small javascript implementation of turtle: https://github.com/takluyver/mobilechelonian
+   * It needs some marginal improvements to be a “full-fledged” turtle program. I think this would be a nice small-ish project to make improvements to.
+
+
+Notes:
+
+
+* S + J: write up above list and publish to https://bids.github.io/swg
+* Update this website after each planning meeting
+
+
+* Q: Is datascience.tables usable for real work?
+
+
+* Does the BIDS blog have an Atom/RSS feed?
+* Can we do a technical BIDS blog sub-feed?
+
+
+* RopenSci: can we distill lessons learned?
