@@ -3,4 +3,4 @@ software-wg
 
 Developing tools for open collaborative research
 
-Notes are currently kept in "BIDS Fellows">"Meeting Notes">"Software Discussion" in bDrive
+Meeting notes are on BDrive in folder "WG - Software" (please mail Stéfan <stefanv at berkeley> for access.)
