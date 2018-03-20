@@ -1,0 +1,146 @@
+﻿11/10/2016
+==========
+
+In Attendance: Stéfan, Saul, Jey, Nelle, Karthik, Yasmin, Kyle, Dmitriy, Chihoko, Cyrus
+
+
+Started discussion around:
+
+
+1. Meeting structure
+2. Activities
+3. Software projects
+
+
+Mention of older ideas / activities that didn’t flourish back then:
+
+
+* Weekly talks
+* DS4DS white paper
+* Hackathons
+* Stand-up / weekly updates
+* Code review
+* Kaggle competitions
+
+
+Conclusions:
+
+
+* Meetings of the whole group should only be held when necessary, e.g. once per term have a planning meeting, or to discuss specific issues/challenges as/when they arise.
+* The SWG will become an umbrella for several projects.  We will decide which projects to take on next week.  Reporting on progress will happen at weekly fellows’ meeting.  Teams will self-identify and organize.
+* Postdocs appointed in the next round can be asked to take charge of a specific project.
+* There are 24 sites off-campus at which we can hold sprints and work meetings.
+* Frequent communications will happen over Slack, but send out an email because not everyone is signed up.
+
+
+Project ideas (2016/11/21)
+Present: Stéfan, Kevin, Kellie, Nelle, Dmitriy, Nima, Karthik, Chris
+Journal club, hack roulette, topical discussions
+Coordinator: Dmitriy & copilot Chris Holdgraf
+Participants:
+* Stéfan van der Walt
+* Nelle (maybe)
+* Kellie
+* Dmitriy
+* Karthik Ram
+Notes:
+* More like a meeting to discuss advances and new tools/elements that aren’t directly related to our work.
+* Ideas spreadsheet
+ImageXD
+Coordinator: Kevin Koy
+Participants:
+* Stéfan van der Walt
+* Dani Ushizima
+* Ariel Rokem
+Notes:
+* See http://www.imagexd.org
+* UW: Ariel & Valentina
+Open Source Dashboard & Tooling
+Coordinator: Nelle Varoquaux[a][b]
+Participants:
+* Stéfan van der Walt
+Notes:
+* Forgotten PRs
+* Analyze GitHub activities: comments, merges, etc.; classify into categories of interest (PRs that need attention, PRs that are stuck, etc.)
+* Examine community management styles & effect (e.g. ZeroMq zero review)
+* Perhaps we can learn / write up some guidelines
+Software Usage Analysis & Tool Discovery
+Coordinator: Karthik Ram[c]
+Participants:
+* Saul Perlmutter
+* Notes: 
+* More passive than https://github.com/arokem/popylar
+* A. Nesbit (ex GitHub, open source freelance): identify whether GH project is scientific code, then proceed to analyze code to see what’s being used
+* What tool is X being used alongside; this project it is used in, what attributes does it have.
+* Can we recommend better / well maintained libraries, based on our existing code? “It looks like you are doing X, maybe you want to look at Y”
+* “You have a lot of code parsing output of X, maybe check out Y”
+* Not primarily a credit system, or what is popular but not cited
+* Similar projects: dependency graphs
+* Across languages (e.g., someone who uses Python + ggplot, discover such transitions)
+* Similar project that focuses on scientific topics: http://www.brainscanr.com/Search?term_a=happiness[d]
+
+
+Workflow/Pipeline Tool
+Coordinator: Kyle Barbary[e][f][g][h]
+Participants:
+Summary: There are many existing tools for running pipelines of software. Such tools generally take care of running pipeline steps in the correct order and exploiting parallelism where possible.
+Many tools are geared towards running the same pipeline on new data sets. However, in scientific software development, we are often iteratively developing the software and running different versions of it on the same dataset. The big idea here is a “version-aware” pipeline tool that would make it easy to run and compare results for two different versions of the software on the same data. It could efficiently re-use results from previous runs for steps of the pipeline for which the software didn’t change. Ideally, the tool would also be little-to-no setup (think “make”) to encourage early adoption when putting together a pipeline.
+
+
+I’d also be happy to be told that these attributes already exist in some tool!
+
+
+Notes:
+* VisTrails apparently has some sort of versioning (but it’s primarily a GUI tool).
+* Saul and I are working with Juliana Friere and the VisTrails people using the Nearby Supernova Factory’s pipeline as a test case.
+
+
+Docathon
+Coordinator: Nelle Varoquaux, Chris Holdgraf
+Participants:
+* Stéfan van der Walt
+Notes:
+* End of February
+* Week-long-ish event
+
+   * Tutorials, good practices, examples of good docs, tools
+   * Projects around docs (building tools, writing docs, etc.) with live tracking stats
+   * Check-in / wrap-up
+
+* Github repository: https://github.com/BIDS/docathon/
+* Google folder: https://drive.google.com/drive/folders/0B_Hrm60eeHxcRmgycTlFVmxta00?usp=sharing
+* Logo: https://drive.google.com/file/d/0B8VZ4vaOYWZ3SDBEZGdValNQU00/view?usp=sharing
+
+
+
+
+TimeXD
+Coordinator: Brett Naul
+Participants:
+Notes:
+
+
+
+
+Other discussions:
+* Stan software library
+* Also interested in community building, user measurement
+
+
+Fortnightly SWG Project Update Email
+Coordinator: Nelle Varoquaux does first round
+Participants: All other coordinators
+Notes:
+* First due: 5 December
+
+
+
+
+[a]Is this for analytics on OS projects?
+[b]Yes, analytics, GitHub bots, pull request analysis, etc.
+[c]just a note on this, I spoke with Ariel Jokem about a little project he's been working on. Might be of interest: https://github.com/arokem/popylar
+[d]here's my friend's project I was talking about
+[e]Is this meant to compliment the "reproducible workflows" book?
+[f]"workflow tool" here refers to the other kind of workflow - the computer kind rather than the human kind.
+[g]Do you mind adding a short summary here of what you have in mind?
+[h]Done!

@@ -1,0 +1,219 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>11/10/2016 &#8212; BIDS Software Working Group 1 documentation</title>
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <script type="text/javascript" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="prev" title="10/16/2017" href="2017_10_16.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="id1">
+<h1>11/10/2016<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<p>In Attendance: Stéfan, Saul, Jey, Nelle, Karthik, Yasmin, Kyle, Dmitriy, Chihoko, Cyrus</p>
+<p>Started discussion around:</p>
+<ol class="arabic simple">
+<li>Meeting structure</li>
+<li>Activities</li>
+<li>Software projects</li>
+</ol>
+<p>Mention of older ideas / activities that didn’t flourish back then:</p>
+<ul class="simple">
+<li>Weekly talks</li>
+<li>DS4DS white paper</li>
+<li>Hackathons</li>
+<li>Stand-up / weekly updates</li>
+<li>Code review</li>
+<li>Kaggle competitions</li>
+</ul>
+<p>Conclusions:</p>
+<ul class="simple">
+<li>Meetings of the whole group should only be held when necessary, e.g. once per term have a planning meeting, or to discuss specific issues/challenges as/when they arise.</li>
+<li>The SWG will become an umbrella for several projects.  We will decide which projects to take on next week.  Reporting on progress will happen at weekly fellows’ meeting.  Teams will self-identify and organize.</li>
+<li>Postdocs appointed in the next round can be asked to take charge of a specific project.</li>
+<li>There are 24 sites off-campus at which we can hold sprints and work meetings.</li>
+<li>Frequent communications will happen over Slack, but send out an email because not everyone is signed up.</li>
+</ul>
+<p>Project ideas (2016/11/21)
+Present: Stéfan, Kevin, Kellie, Nelle, Dmitriy, Nima, Karthik, Chris
+Journal club, hack roulette, topical discussions
+Coordinator: Dmitriy &amp; copilot Chris Holdgraf
+Participants:
+* Stéfan van der Walt
+* Nelle (maybe)
+* Kellie
+* Dmitriy
+* Karthik Ram
+Notes:
+* More like a meeting to discuss advances and new tools/elements that aren’t directly related to our work.
+* Ideas spreadsheet
+ImageXD
+Coordinator: Kevin Koy
+Participants:
+* Stéfan van der Walt
+* Dani Ushizima
+* Ariel Rokem
+Notes:
+* See <a class="reference external" href="http://www.imagexd.org">http://www.imagexd.org</a>
+* UW: Ariel &amp; Valentina
+Open Source Dashboard &amp; Tooling
+Coordinator: Nelle Varoquaux[a][b]
+Participants:
+* Stéfan van der Walt
+Notes:
+* Forgotten PRs
+* Analyze GitHub activities: comments, merges, etc.; classify into categories of interest (PRs that need attention, PRs that are stuck, etc.)
+* Examine community management styles &amp; effect (e.g. ZeroMq zero review)
+* Perhaps we can learn / write up some guidelines
+Software Usage Analysis &amp; Tool Discovery
+Coordinator: Karthik Ram[c]
+Participants:
+* Saul Perlmutter
+* Notes:
+* More passive than <a class="reference external" href="https://github.com/arokem/popylar">https://github.com/arokem/popylar</a>
+* A. Nesbit (ex GitHub, open source freelance): identify whether GH project is scientific code, then proceed to analyze code to see what’s being used
+* What tool is X being used alongside; this project it is used in, what attributes does it have.
+* Can we recommend better / well maintained libraries, based on our existing code? “It looks like you are doing X, maybe you want to look at Y”
+* “You have a lot of code parsing output of X, maybe check out Y”
+* Not primarily a credit system, or what is popular but not cited
+* Similar projects: dependency graphs
+* Across languages (e.g., someone who uses Python + ggplot, discover such transitions)
+* Similar project that focuses on scientific topics: <a class="reference external" href="http://www.brainscanr.com/Search?term_a=happiness[d">http://www.brainscanr.com/Search?term_a=happiness[d</a>]</p>
+<p>Workflow/Pipeline Tool
+Coordinator: Kyle Barbary[e][f][g][h]
+Participants:
+Summary: There are many existing tools for running pipelines of software. Such tools generally take care of running pipeline steps in the correct order and exploiting parallelism where possible.
+Many tools are geared towards running the same pipeline on new data sets. However, in scientific software development, we are often iteratively developing the software and running different versions of it on the same dataset. The big idea here is a “version-aware” pipeline tool that would make it easy to run and compare results for two different versions of the software on the same data. It could efficiently re-use results from previous runs for steps of the pipeline for which the software didn’t change. Ideally, the tool would also be little-to-no setup (think “make”) to encourage early adoption when putting together a pipeline.</p>
+<p>I’d also be happy to be told that these attributes already exist in some tool!</p>
+<p>Notes:
+* VisTrails apparently has some sort of versioning (but it’s primarily a GUI tool).
+* Saul and I are working with Juliana Friere and the VisTrails people using the Nearby Supernova Factory’s pipeline as a test case.</p>
+<p>Docathon
+Coordinator: Nelle Varoquaux, Chris Holdgraf
+Participants:
+* Stéfan van der Walt
+Notes:
+* End of February
+* Week-long-ish event</p>
+<blockquote>
+<div><ul class="simple">
+<li>Tutorials, good practices, examples of good docs, tools</li>
+<li>Projects around docs (building tools, writing docs, etc.) with live tracking stats</li>
+<li>Check-in / wrap-up</li>
+</ul>
+</div></blockquote>
+<ul class="simple">
+<li>Github repository: <a class="reference external" href="https://github.com/BIDS/docathon/">https://github.com/BIDS/docathon/</a></li>
+<li>Google folder: <a class="reference external" href="https://drive.google.com/drive/folders/0B_Hrm60eeHxcRmgycTlFVmxta00?usp=sharing">https://drive.google.com/drive/folders/0B_Hrm60eeHxcRmgycTlFVmxta00?usp=sharing</a></li>
+<li>Logo: <a class="reference external" href="https://drive.google.com/file/d/0B8VZ4vaOYWZ3SDBEZGdValNQU00/view?usp=sharing">https://drive.google.com/file/d/0B8VZ4vaOYWZ3SDBEZGdValNQU00/view?usp=sharing</a></li>
+</ul>
+<p>TimeXD
+Coordinator: Brett Naul
+Participants:
+Notes:</p>
+<p>Other discussions:
+* Stan software library
+* Also interested in community building, user measurement</p>
+<p>Fortnightly SWG Project Update Email
+Coordinator: Nelle Varoquaux does first round
+Participants: All other coordinators
+Notes:
+* First due: 5 December</p>
+<p>[a]Is this for analytics on OS projects?
+[b]Yes, analytics, GitHub bots, pull request analysis, etc.
+[c]just a note on this, I spoke with Ariel Jokem about a little project he’s been working on. Might be of interest: <a class="reference external" href="https://github.com/arokem/popylar">https://github.com/arokem/popylar</a>
+[d]here’s my friend’s project I was talking about
+[e]Is this meant to compliment the “reproducible workflows” book?
+[f]”workflow tool” here refers to the other kind of workflow - the computer kind rather than the human kind.
+[g]Do you mind adding a short summary here of what you have in mind?
+[h]Done!</p>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<p class="logo">
+  <a href="../index.html">
+    <img class="logo" src="../_static/logo.png" alt="Logo"/>
+    
+  </a>
+</p>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../sprints.html">Sprints</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../projects.html">Projects</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Planning meetings</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="2017_10_16.html">10/16/2017</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">11/10/2016</a></li>
+</ul>
+</li>
+</ul>
+
+
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2017, BIDS Fellows.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.7.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.10</a>
+      
+      |
+      <a href="../_sources/plan/2016_11_10.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
