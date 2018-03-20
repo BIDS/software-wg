@@ -15,8 +15,13 @@ help:
 .PHONY: help Makefile
 
 github: html
-	ghp-import -n $(BUILDDIR)/html
-	git push -u origin gh-pages -f
+	./push_docs_to_repo.py \
+	  --branch gh-pages \
+	  --email commitbot@swg \
+	  --committer "Software Working Group" \
+	  --message "Update website" \
+	  --force \
+	     _build/html git@github.com:bids/swg
 
 # Catch-all target: route all unknown targets to Sphinx using the new
 # "make mode" option.  $(O) is meant as a shortcut for $(SPHINXOPTS).
